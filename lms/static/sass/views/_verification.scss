@@ -198,6 +198,7 @@
   .title {
     @extend %t-title5;
     @extend %t-weight1;
+    // text-align: left;
   }
 
   .copy {
@@ -451,6 +452,7 @@
 
       width: flex-grid(12, 12);
       margin: 0;
+      text-align: left !important;
 
       .sts-course,
       .sts-track {
@@ -1356,6 +1358,7 @@
       @extend %hd-lv2;
 
       color: $m-blue-d1;
+      // border-bottom: none;
     }
 
     .instruction {
@@ -1443,7 +1446,7 @@
 
       border-top: ($baseline/4) solid $m-gray-d4;
       padding: $baseline ($baseline*1.5);
-      background: $m-gray-l4;
+      background: $light-300;
 
       &:last-child {
         margin-bottom: 0;
@@ -1504,7 +1507,7 @@
     }
 
     .register-choice-audit {
-      border-color: $m-blue-d1;
+      border-color: $light-700;
 
       .deco-ribbon {
         position: relative;
@@ -1523,12 +1526,13 @@
       }
 
       .action-select input {
-        @extend %btn-primary-blue;
+        @extend %btn-outline-primary;
       }
     }
 
     .register-choice-certificate {
-      border-color: $verified-color-lvl3;
+      border-color: $primary-500;
+      box-shadow: none !important;
       position: relative;
 
       .deco-ribbon {
@@ -1565,6 +1569,8 @@
       .action-select button[name="verified_mode"] {
         font-weight: 600;
         padding: 10px 15px;
+        background: $primary-500;
+        border-radius: 0;
       }
 
       // extra register options/info
